@@ -9,7 +9,7 @@
     <!-- ... -->
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://azharrizki.github.io/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -57,7 +57,7 @@
                         <div class="flex space-x-12" id="toggleBox">
                             <a data-scrool href="#about"
                                 class="font-mono text-gray-100 hover:text-green-300 pr-0 py-2 rounded-md text-sm font-medium">About</a>
-                            <a href="#"
+                            <a data-scrool href="#experience"
                                 class="text-gray-100 font-mono hover:text-green-300 pr-0 py-2 rounded-md text-sm font-medium">Experience</a>
                             <a href="#"
                                 class="font-mono text-gray-100 hover:text-green-300 pr-0 py-2 rounded-md text-sm font-medium">Work</a>
@@ -75,7 +75,7 @@
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                 <a data-scrool href="#about"
                     class="text-gray-200 hover:text-green-300 block px-3 py-2 rounded-md text-base font-medium">About</a>
-                <a href="#experience"
+                <a data-scrool href="#experience"
                     class="text-gray-200 hover:text-green-300 block px-3 py-2 rounded-md text-base font-medium">Experience</a>
                 <a href="#project"
                     class="text-gray-200 hover:text-green-300 block px-3 py-2 rounded-md text-base font-medium">Project</a>
@@ -146,8 +146,8 @@
         <!-- end of Vertical -->
 
         <!-- About -->
-        <div class="h-full md:h-screen  py-12 md:py-12">
-            <div class="relative" id="about">
+        <div class="h-full md:h-screen  py-12 md:py-12" id="about">
+            <div class="relative">
                 <div class="flex justify-start">
                     <div class="md:px-6 pr-4">
                         <h4 class="font-sans text-gray-300 md:text-3xl text-xl font-bold">About Me
@@ -184,7 +184,7 @@
                                 <div class="relative img w-80 h-80">
                                     <div class="absolute w-80 h-80 bg-green-400 rounded-2xl opacity-50 hover:opacity-0">
                                     </div>
-                                    <img class="rounded-2xl" src="https://azharrizki.github.io/img/foto.png" alt="">
+                                    <img class="rounded-2xl" src="img/foto.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -194,12 +194,17 @@
         </div>
         <!-- end of About -->
 
+        <!-- Experience -->
+        <div class="h-full md:h-screen" id="experience"></div>
+
+        <!-- end of Experience -->
+
     </div>
 </body>
 
 <script src="https://kit.fontawesome.com/99dc04c8ee.js"></script>
-<script src="https://azharrizki.github.io/js/smooth-scroll.polyfills.min.js"></script>
-<script src="https://azharrizki.github.io/js/app.js" type="javascript"></script>
+<script src="js/smooth-scroll.polyfills.min.js"></script>
+<script src="js/app.js" type="javascript"></script>
 
 <script>
     var scroll = new SmoothScroll('a[href*="#"]', {
