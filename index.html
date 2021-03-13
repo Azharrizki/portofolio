@@ -17,7 +17,7 @@
 	<!-- This example requires Tailwind CSS v2.0+ -->
 
 	<!-- Navbar -->
-	<nav id="navbar" class="relative fixed flex justify-between h-16 md:h-20 shadow-md items-center px-8 md:px-20">
+	<nav id="navbar" class="relative z-50 fixed flex justify-between h-16 md:h-20 shadow-md items-center px-8 md:px-20">
 		<div class="relative flex justify-between flex-grow items-center ">
 			<div class="flex justify-between items-center w-full md:w-auto">
 				<a href="#landing">
@@ -46,7 +46,7 @@
 
 			<!-- Mobile Menu -->
 			<div id="mobile-menu" class="fixed top-0 hidden inset-x-0 md:hidden transition origin-top-right">
-				<div class="rounded-lg bg-blue-800 shadow-md overflow-hidden ring-1 ring-black ring-opacity-5">
+				<div class="rounded-b-lg bg-blue-800 shadow-md overflow-hidden ring-1 ring-black ring-opacity-5">
 					<div class="flex px-8 pt-3 items-center justify-between">
 						<a href="#landing">
 							<img src="img/logo.png" class="w-8" alt="">
@@ -119,16 +119,16 @@
 	<main class="md:px-36 lg:px-52 px-8">
 		<!-- Landing page -->
 		<section class="h-full md:h-screen py-24" id="landing">
-			<div class="md:text-lg text-base text-green-300 font-mono">
+			<div class="md:text-lg text-md text-green-300 pb-4 font-mono">
 				<h4>Hi, my name is</h4>
 			</div>
-			<div class="md:text-7xl text-4xl font-bold text-gray-300 pb-2 md:py-4">
+			<div class="md:text-7xl text-3xl font-bold text-gray-300 pb-2 md:py-4">
 				<h2>Muhammad Azhar Rizki.</h2>
 			</div>
-			<div class="md:text-6xl text-4xl font-bold text-gray-400 pb-2 md:pb-4">
+			<div class="md:text-6xl text-3xl font-bold text-gray-400 pb-5 md:pb-10">
 				<h2>I build things for the Web.</h2>
 			</div>
-			<div class="md:text-lg text-md pb-2 md:pb-4 md:w-7/12  font-normal text-gray-400">
+			<div class="md:text-lg text-md pb-3 md:pb-4 md:w-7/12  font-normal text-gray-400">
 				<p>I' m a software enginer based in Klaten, Jawa Tengah spesializing in building exceptional websites,
 					aplications, and everything in between.</p>
 			</div>
@@ -184,17 +184,17 @@
 								<li>CodeIgniter</li>
 							</ul>
 						</div>
-						<div class="col-span-5 flex justify-center pt-8 md:pt-2">
-							<div class="relative">
+						<div class="col-span-5 flex justify-center mt-8 md:mt-2 ">
+							<div
+								class="absolute z-0 w-60 h-60 md:w-80 md:h-80 border border-2 rounded-2xl transform translate-x-3 translate-y-4 ">
+							</div>
+
+							<div
+								class="z-10 w-60 h-60 md:w-80 md:h-80 transform hover:-translate-x-2 hover:-translate-y-2">
 								<div
-									class="absolute top-3 left-3 rounded-2xl border-2 border-green-400 w-60 h-60 lg:w-80 lg:h-80">
+									class="absolute z-20 opacity-60 hover:opacity-0 rounded-2xl w-60 h-60 md:w-80 md:h-80 bg-green-500 ">
 								</div>
-								<div class="relative img w-60 h-60 lg:w-80 lg:h-80">
-									<div
-										class="absolute w-60 h-60 lg:w-80 lg:h-80 bg-green-400 rounded-2xl opacity-40 hover:opacity-0">
-									</div>
-									<img class="rounded-2xl" src="img/foto.png" alt="">
-								</div>
+								<img class="rounded-2xl" src="img/foto.png" alt="">
 							</div>
 						</div>
 					</div>

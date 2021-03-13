@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
 body {
     background-color: rgb(22, 22, 49)
 }
@@ -13,4 +19,12 @@ body {
 
 .scrollNav {
     display: block;
+}
+
+.img::before {
+    border-style: solid;
+    border-width: 5px;
+    width: 15rem;
+    height: 15rem;
+    transform: translateX(10px);
 }
