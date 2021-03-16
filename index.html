@@ -17,11 +17,12 @@
 	<!-- This example requires Tailwind CSS v2.0+ -->
 
 	<!-- Navbar -->
-	<nav id="navbar" class="relative z-50 fixed flex justify-between h-16 md:h-20 shadow-md items-center px-8 md:px-20">
-		<div class="relative flex justify-between flex-grow items-center ">
+	<nav id="navbar" style="background-color: #0a192f"
+		class="w-full z-50 fixed flex justify-between h-16 md:h-20 shadow-md items-center px-8 md:px-20">
+		<div class="flex justify-between flex-grow items-center ">
 			<div class="flex justify-between items-center w-full md:w-auto">
 				<a href="#landing">
-					<img src="img/logo.png" class="w-8" alt="">
+					<img src="img/logo.png" class="w-9" alt="">
 				</a>
 				<div class="flex items-center md:hidden">
 					<button id="open-btn" type="button"
@@ -116,19 +117,19 @@
 	</div>
 	<!-- end of Vertical -->
 
-	<main class="md:px-36 lg:px-52 px-8">
+	<main class="md:px-36 lg:px-52 px-6">
 		<!-- Landing page -->
-		<section class="h-full md:h-screen py-24" id="landing">
-			<div class="md:text-lg text-md text-green-300 pb-4 font-mono">
+		<section class="h-screen py-24" id="landing">
+			<div class="md:text-lg text-md text-green-300 pb-2 pt-6 font-mono">
 				<h4>Hi, my name is</h4>
 			</div>
-			<div class="md:text-7xl text-3xl font-bold text-gray-300 pb-2 md:py-4">
+			<div class="md:text-7xl text-3xl font-bold text-gray-300 pb-2 md:pb-4">
 				<h2>Muhammad Azhar Rizki.</h2>
 			</div>
-			<div class="md:text-6xl text-3xl font-bold text-gray-400 pb-5 md:pb-10">
-				<h2>I build things for the Web.</h2>
+			<div class="md:text-6xl text-3xl font-bold text-gray-500 pb-7 md:pb-9">
+				<h2>I build things for the web.</h2>
 			</div>
-			<div class="md:text-lg text-md pb-3 md:pb-4 md:w-7/12  font-normal text-gray-400">
+			<div class="md:text-lg text-md pb-5 md:pb-6 md:w-7/12  font-normal text-gray-400">
 				<p>I' m a software enginer based in Klaten, Jawa Tengah spesializing in building exceptional websites,
 					aplications, and everything in between.</p>
 			</div>
@@ -142,13 +143,13 @@
 		<!-- End of landing page -->
 
 		<!-- About -->
-		<section class="h-full md:h-screen py-24" id="about">
+		<section class="h-full md:h-screen py-16 md:py-24" id="about">
 			<div class="">
 				<div class="flex pb-5">
 					<div class="md:pb-0 pr-3">
 						<h4 class="font-sans text-gray-300 md:text-3xl text-lg font-bold">About Me</h4>
 					</div>
-					<div class="md:w-5/12 w-10/12">
+					<div class="md:w-4/12 w-8/12">
 						<div class="border mt-5 border-t-0 bg-blue-200"></div>
 					</div>
 				</div>
@@ -204,7 +205,7 @@
 		<!-- end of About -->
 
 		<!-- Experience -->
-		<section class="h-full md:h-screen py-24" id="experience">
+		<section class="h-screen md:h-screen py-24" id="experience">
 			<div>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vel corporis accusantium,
 					recusandae, unde excepturi assumenda similique consectetur vitae possimus quae, ullam perferendis
@@ -241,7 +242,7 @@
 			if (prevScrollpos > currentScrollPos) {
 				document.getElementById("navbar").style.top = "0";
 			} else {
-				document.getElementById("navbar").style.top = "-50px";
+				document.getElementById("navbar").style.top = "-100px";
 			}
 			prevScrollpos = currentScrollPos;
 		}
